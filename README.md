@@ -13,21 +13,21 @@ sudo ./create-cluster-with-env.sh
 
 ### deployment
 ```bash
-kubectl apply -f deployment.yaml
+sudo kubectl apply -f deployment.yaml
 ```
 
 ### check pod
 ```bash
-kubectl get pods
+sudo kubectl get pods
 ```
 
 ### expose
 ```bash
-kubectl apply -f service.yaml
+sudo kubectl apply -f service.yaml
 ```
 
 
 ### check service
 ```bash
-kubectl get svc
+sudo kubectl get svc
 ```
