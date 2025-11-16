@@ -3,31 +3,33 @@
 ## Automatic Install
 
 
-## 1. Make installer executable
+### 1. Make installer executable
 ```bash
 chmod +x install.sh
 ```
 
-## 2. Install all
+### 2. Install all
 ```bash
 sudo ./install.sh
 ```
 
 
+---
 
 
 ## Manual Install
-## 1. Make installer executable
+
+### 1. Make installer executable
 ```bash
 chmod +x create-cluster-with-env.sh
 ```
 
-## 2. Create Kubernetes cluster
+### 2. Create Kubernetes cluster
 ```bash
 sudo ./create-cluster-with-env.sh
 ```
 
-## 3. Deploy Application (Deployment + Service)
+### 3. Deploy Application (Deployment + Service)
 
 ### Apply Deployment
 ```bash
@@ -49,7 +51,7 @@ sudo kubectl apply -f service.yaml
 sudo kubectl get svc
 ```
 
-## 4. Enable Ingress Support
+### 4. Enable Ingress Support
 
 ### Step 1 — Install Ingress NGINX Controller
 ```bash
@@ -72,7 +74,7 @@ Check ingress:
 sudo kubectl get ingress
 ```
 
-## 5. Access Application via Ingress
+### 5. Access Application via Ingress
 
 ### Add host mapping (Windows)
 Edit:
@@ -90,7 +92,7 @@ Add:
 http://myapp.local
 ```
 
-## 6. (Optional) Port-forward (Quick Testing)
+### 6. (Optional) Port-forward (Quick Testing)
 
 ```bash
 sudo kubectl port-forward svc/myapp-service 8081:80 > portforward.log 2>&1 &
