@@ -35,6 +35,12 @@ sudo kubectl get svc
 
 ### port forward (access app from host)
 ```bash
-sudo kubectl port-forward svc/myapp-service 8080:80
+sudo kubectl port-forward svc/myapp-service 8081:80 > portforward.log 2>&1 &
+```
+
+
+### access app from host
+```bash
+http://localhost:8081
 ```
 
