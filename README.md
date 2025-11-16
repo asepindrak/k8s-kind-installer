@@ -31,3 +31,10 @@ sudo kubectl apply -f service.yaml
 ```bash
 sudo kubectl get svc
 ```
+
+
+### port forward (access app from host)
+```bash
+sudo kubectl port-forward svc/myapp-service 8080:80
+```
+
